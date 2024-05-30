@@ -1,0 +1,404 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  color: #f8f8f8;
+  font-size: 16px;
+}
+
+h1,
+h2,
+p {
+  font-family: "Manrope", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+h2,
+p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #c2c2c2;
+  margin-top: 5px;
+  user-select: none;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.newsletter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #282828;
+  border: solid 2px #303030;
+  padding: 50px;
+  max-width: 650px;
+  border-radius: 8px;
+  margin: 20px;
+  z-index: 100;
+  opacity: 0.97;
+}
+
+.newsletter img {
+  height: 64px;
+  user-select: none;
+}
+
+.newsletter h1 {
+  margin-top: 30px;
+  user-select: none;
+}
+
+.newsletter h2.sub {
+  user-select: none;
+  font-weight: 600;
+  color: #f8f8f8;
+}
+
+.newsletter form {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.newsletter .container {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.newsletter form input {
+  flex: 1;
+  border: none;
+  color: #000;
+  line-height: 1;
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+  margin-left: 10px;
+}
+
+.newsletter form button {
+  font-size: 18px;
+}
+
+.newsletter .footer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: #bbb;
+  margin-top: 30px;
+  margin-bottom: -10px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.newsletter .footer span {
+  color: #fff;
+  margin-right: 2px;
+}
+
+.newsletter .footer a {
+  color: #00bd68;
+  text-decoration: none;
+  border-bottom: dotted 1px #00bd68;
+}
+
+ul {
+  list-style: disc;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+  font-family: "Manrope", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+}
+
+li {
+  font-family: "Manrope", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.issues {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.issue {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.issues .issue {
+  display: flex;
+  gap: 20px;
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.issues .issue .stub {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 12px;
+  background-color: #282828;
+  border: solid 2px #303030;
+  border-radius: 8px;
+}
+
+.issues .issue .stub p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  color: #f8f8f8;
+}
+
+.issues .issue .stub .number {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.issues .issue .stub .label {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 15px;
+  color: #bbb;
+}
+
+.issues .issue .info p {
+  color: #f8f8f8;
+}
+
+.issues .issue .info .title {
+  padding: 5px 0 0 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.issues .issue .info .desc {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+.issue-label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: "Manrope", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px 12px;
+  background-color: #282828;
+  border: solid 2px #303030;
+  border-radius: 8px;
+  color: #aaa;
+}
+
+.post {
+  margin-top: 25px;
+  padding: 0;
+}
+
+.post p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+.post p:last-child {
+  margin: 0;
+}
+
+.post h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #f8f8f8;
+}
+
+.post b {
+  font-weight: 700;
+}
+
+.sign-up-footer {
+  width: 100%;
+  margin-top: 35px;
+  padding-top: 30px;
+  border-top: solid 1px #444;
+}
+
+.sign-up-footer .label {
+  font-family: "Manrope", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sign-up-footer form {
+  margin-top: 20px;
+}
+
+.button {
+  background-image: linear-gradient(-180deg, #00d775, #00bd68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  font-family: "Manrope", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px 14px;
+  border: none;
+  color: #f8f8f8;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background: #00bd68;
+}
+
+.flag {
+  position: absolute;
+  user-select: none;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.flag.arg {
+  right: 9%;
+  bottom: 12%;
+  z-index: 2;
+}
+
+.flag.bra {
+  left: 3%;
+  top: 30%;
+}
+
+.flag.chn {
+  right: 5%;
+  top: 30%;
+}
+
+.flag.esp {
+  left: 0;
+  top: 0;
+}
+
+.flag.fra {
+  left: 50%;
+  bottom: 0;
+}
+
+.flag.ger {
+  right: 2%;
+  bottom: 3%;
+}
+
+.flag.ind {
+  left: 3%;
+  bottom: 3%;
+}
+
+.flag.ita {
+  left: 40%;
+  top: 0;
+}
+
+.flag.nor {
+  left: 1%;
+  bottom: 20%;
+}
+
+.flag.tan {
+  right: 10%;
+  top: 5%;
+}
+
+.flag.tur {
+  right: 0%;
+  top: 0%;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    min-height: 100dvh;
+  }
+
+  .newsletter {
+    padding: 20px;
+    opacity: 0.99;
+  }
+
+  .newsletter img {
+    height: 54px;
+  }
+
+  .newsletter .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter .container input {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .newsletter .footer {
+    padding: 0 0 10px 0;
+  }
+
+  .newsletter .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .newsletter .footer div span {
+    display: none;
+  }
+
+  .flag.ger {
+    right: 0%;
+    bottom: 3%;
+  }
+
+  .flag.fra {
+    left: 35%;
+    z-index: 2;
+  }
+
+  .flag.ind {
+    left: 0;
+    bottom: 0;
+  }
+
+  .flag.ita {
+    left: 25%;
+  }
+
+  .flag.nor,
+  .flag.tan,
+  .flag.chn,
+  .flag.bra,
+  .flag.arg {
+    display: none;
+  }
+}
