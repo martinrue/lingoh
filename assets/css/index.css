@@ -238,6 +238,16 @@ li {
   font-weight: 700;
 }
 
+.post blockquote {
+  margin: 0 0 0 15px;
+  border-left: solid 2px #666;
+  padding-left: 15px;
+  padding: 5px 5px 5px 15px;
+  font-family: "Manrope", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  color: #888;
+}
+
 .sign-up-footer {
   width: 100%;
   margin-top: 35px;

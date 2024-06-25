@@ -20,7 +20,7 @@
 
     <meta property="og:url" content="https://lingoh.news" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ling-oh!" />
+    <meta property="og:title" content="Ling-oh! Issues" />
     <meta property="og:description" content="The newsletter for people who love language learning." />
     <meta property="og:image" content="https://lingoh.news/assets/img/og.jpg" />
 
@@ -29,30 +29,24 @@
 
   <body>
     <section class="newsletter">
-      <img id="logo" src="/assets/img/logo/1.svg" alt="The Ling-oh! logo" />
+      <a href="/">
+        <img id="logo" src="/assets/img/logo/1.svg" alt="The Ling-oh! logo" />
+      </a>
 
-      <h1>The newsletter for language fanatics</h1>
-      <h2>3 minutes of language-learning motivation, insights and ideas direct to your inbox every other Monday, for free.</h2>
+      <h1>Past Issues</h1>
 
-      <form class="form" action="https://app.convertkit.com/forms/6622906/subscriptions" method="post" data-sv-form="6622906" data-uid="b4a158f8cb" data-options='{"settings":{"after_subscribe":{"action":"redirect","redirect_url":"https://lingoh.news/thanks"}}}'>
-        <div class="container">
-          <input type="email" value="" name="email_address" placeholder="Enter your email" id="email" required autofocus />
-          <button type="submit" data-element="submit" class="button">Sign me up</button>
-        </div>
-      </form>
+      <div class="issues">
+        <a href="/is-language-learning-dead" class="issue">
+          <div class="stub">
+            <p class="number">01</p>
+            <p class="label">Issue</p>
+          </div>
 
-      <div class="footer">
-        <div>
-          <a href="/issues">Past issues</a>
-          <span>&#8226;</span>
-        </div>
-
-        <div>
-          <a href="/privacy">Privacy</a>
-          <span>&#8226;</span>
-        </div>
-
-        <div>Made with ♥ by <a href="https://yakk.app" target="_blank">Yakk</a></div>
+          <div class="info">
+            <p class="title">Is language learning dead?</p>
+            <p class="desc">Learning a language is an opportunity to open a door to a place's culture, to its people. It's being granted access to the inside.</p>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -67,13 +61,5 @@
     <img class="flag nor" src="/assets/img/flags/nor.svg" />
     <img class="flag tan" src="/assets/img/flags/tan.svg" />
     <img class="flag tur" src="/assets/img/flags/tur.svg" />
-
-    <script type="text/javascript" src="/assets/js/app.js"></script>
-    <script type="text/javascript" src="/assets/js/logo.js"></script>
-    <script type="text/javascript">
-      app.onReady(() => {
-        logo.loadImages(() => logo.animate("#logo"));
-      });
-    </script>
   </body>
 </html>
