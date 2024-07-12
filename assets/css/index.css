@@ -244,6 +244,7 @@ li {
   padding-left: 15px;
   padding: 5px 5px 5px 15px;
   font-family: "Manrope", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
   font-size: 18px;
   color: #888;
 }
