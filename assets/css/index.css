@@ -304,6 +304,10 @@ li {
   color: #888;
 }
 
+.post blockquote.left {
+  margin-left: 0;
+}
+
 .sign-up-footer {
   width: 100%;
   margin-top: 35px;
